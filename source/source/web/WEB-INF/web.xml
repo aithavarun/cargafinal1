@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd">
+  <context-param>
+    <description>Url de la base de datos</description>
+    <param-name>databaseURL</param-name>
+    <!--prd-->
+    <!--<param-value>jdbc:postgresql://192.168.140.29:5432/Carga</param-value> -->
+    <!--<param-value>jdbc:postgresql://192.168.140.29:5432/Carga4</param-value>-->
+    <!--<param-value>jdbc:postgresql://127.0.0.1:5432/16042018carga2k</param-value>-->
+    <!-- <param-value>jdbc:postgresql://localhost:5432/carga</param-value>
+    <param-value>jdbc:postgresql://avianca-postgres-db.postgres.database.azure.com:5432/postgres?user=postgres@avianca-postgres-db&password=Aerogal@1</param-value>  -->
+    <param-value>jdbc:sqlserver://carga2k.database.windows.net:1433;database=carga2k</param-value>
+  </context-param>
+  <context-param>
+    <param-name>username</param-name>
+    <!--<param-value>postgres@avianca-postgres-db</param-value> -->
+    <param-value>carga2kAdmin@carga2k</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+   <!-- <param-value>Aerogal@1</param-value> -->
+    <param-value>Avianca@dmin!@#</param-value>
+    <!--<param-value>postgres</param-value>-->
+  </context-param>
+  <context-param>
+    <param-name>jdbcDriver</param-name>
+    <!--<param-value>org.postgresql.Driver</param-value>-->
+    <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+  </context-param>
+  <display-name>
+      Aerogal - Desarrollo
+   </display-name>
+  <servlet>
+    <servlet-name>controller</servlet-name>
+    <servlet-class>
+         com.aerogal.support.controller.ControllerServlet
+      </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controller</servlet-name>
+    <url-pattern>/servlet/controller/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <servlet-class>
+         index.htm
+      </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+  <resource-ref>
+    <description>Product support database</description>
+    <res-ref-name>jdbc/aerogal</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <session-config>
+    <session-timeout>120</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
