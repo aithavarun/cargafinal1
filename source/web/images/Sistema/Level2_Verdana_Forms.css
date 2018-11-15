@@ -1,0 +1,118 @@
+body {
+	
+	text-align:left; 
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+	border-style:solid; 
+	border-color:#dddddd; 
+	border-width:1px; 
+	padding:2px 8px; 
+}
+
+td {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+th {
+	background-color:#da2912; 
+	color:#ffffff;
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+form {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+	}
+
+input {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+textarea {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+select {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+ul {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+li {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+ol {
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+	text-decoration:none; 
+}
+
+.small {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+.big {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.bodystyle {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.box2 {
+	border-width: 3px;
+	border-style: solid;
+	padding: 5px;
+}
+
+.form1 th{background-color:#da2912}
+.error th{background-color:#FF0000}
+.exito th{background-color:#60E8AD}
+.vuelo td{background-color:#FFFFCC}
+.tipo th{background-color:#FFFFCC; color:#000066}
+.boleto th{background-color:#000066;color:#FFFFFF;
+           font-size:10px; 
+           font-family: Arial, Helvetica, sans-serif;
+		   border-width:0;
+		   padding: 2px;
+		    border-style: none; }
+.enlaceblanco{color:#FFFFFF}			

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+  <SCRIPT language="JavaScript 1.2" type="text/javascript">
+  
+    function ventana(nombre){
+        function Is() {
+    var agent = navigator.userAgent.toLowerCase();
+    this.ns = (navigator.appName == "Netscape");
+    this.ie = (navigator.appName == "Microsoft Internet Explorer");
+        }
+
+var is = new Is();
+
+    if(is.ie) {
+
+	var obj = window.open( nombre, "","SCROLLBARS=yes,WIDTH=900,HEIGHT=600,TOP=0,LEFT=0,ALWAYSRAISED=yes,TITLEBAR=no,MENUBAR=no,HOTKEYS=no,TOOLBAR=no,dependent=parent,location=no" )
+
+        } 
+    else if(is.ns) {
+	var obj = window.open( nombre, "","SCROLLBARS=yes,WIDTH=900,HEIGHT=600,TOP=0,LEFT=0,ALWAYSRAISED=yes,TITLEBAR=no,MENUBAR=no,HOTKEYS=no,TOOLBAR=no,dependent=parent,location=no" )
+
+    }
+   /*     
+   var ventana = window.self;  
+   ventana.opener = window.self;  
+   ventana.close();
+   */
+}
+
+
+      
+</SCRIPT>
+    <title></title>
+  </head>
+  <body onload="ventana('index.jsp');" >
+  
+  </body>
+</html>
